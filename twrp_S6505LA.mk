@@ -36,3 +36,7 @@ PRODUCT_MODEL := S6505L
 PRODUCT_MANUFACTURER := nuu
 
 PRODUCT_GMS_CLIENTID_BASE := android-suncupid
+
+# HACK: Set vendor patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.build.security_patch=2099-12-31
