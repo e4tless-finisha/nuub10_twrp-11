@@ -19,6 +19,7 @@
 LOCAL_PATH := device/nuu/S6505LA
 
 # A/B
+AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     boot \
     dtbo \
