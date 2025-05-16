@@ -1,2 +1,10 @@
-# nuub10_twrp-11
-Building Custom TWRP Recovery for Nuu B10 Smartphone
+# Android device tree for NUU S6505L (S6505LA)
+
+```
+#
+# Copyright (C) 2025 The Android Open Source Project
+# Copyright (C) 2025 SebaUbuntu's TWRP device tree generator
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+```
