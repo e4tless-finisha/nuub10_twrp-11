@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_S6505LA.mk
+    $(LOCAL_DIR)/twrp_S6505LA.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_S6505LA-user \
-    omni_S6505LA-userdebug \
-    omni_S6505LA-eng
+    twrp_S6505LA-user \
+    twrp_S6505LA-userdebug \
+    twrp_S6505LA-eng
