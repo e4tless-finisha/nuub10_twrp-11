@@ -98,7 +98,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 TARGET_RECOVERY_DEVICE_MODULES += \
     libkeymaster4 \
@@ -148,7 +147,7 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := true
 TW_INCLUDE_NTFS_3G := true
 TW_EXTRA_LANGUAGES := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
-TW_DEVICE_VERSION := Ulefone Note 11P_RH1_20211116_V02 - mehanik6
+TW_DEVICE_VERSION := nuu_11_0
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
