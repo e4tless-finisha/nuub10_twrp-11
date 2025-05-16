@@ -19,7 +19,6 @@ AB_OTA_PARTITIONS += \
     boot \
     system \
     product
-BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -61,6 +60,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 # Kernel - prebuilt
+TARGET_NO_KERNEL := false
 TARGET_PREBUILT_KERNEL := true
 TARGET_FORCE_PREBUILT_KERNEL := true
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
@@ -114,11 +114,6 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libkeymaster4 \
     libkeymaster41 \
     libpuresoftkeymasterdevice
-
-# Hack: prevent anti rollback
-PLATFORM_SECURITY_PATCH := 2099-12-31
-VENDOR_SECURITY_PATCH := 2099-12-31
-PLATFORM_VERSION := 16.1.0
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6771
@@ -189,5 +184,6 @@ TARGET_SCREEN_HEIGHT := 2460
 TW_INCLUDE_CRYPTO := true
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
+   $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
